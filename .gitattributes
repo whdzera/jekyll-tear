@@ -1,0 +1,2 @@
+*.md linguist-language=Ruby
+*.markdown linguist-language=Ruby

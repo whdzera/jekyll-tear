@@ -1,0 +1,39 @@
+<nav class="bg-white dark:bg-gray-800 shadow-md">
+  <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+          <div class="flex space-x-4">
+              <div class="flex items-center py-3">
+                  <span class="font-bold text-2xl text-primary dark:text-primary">whdzera</span>
+              </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-1">
+            <a class="py-4 px-3 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400 transition-colors duration-300 {% if page.url == '/' %}text-primary dark:text-blue-400{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+            
+            <a class="py-4 px-3 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400 transition-colors duration-300 {% if page.url == '/projects/' %}text-primary dark:text-blue-400{% endif %}" href="{{ '/projects/' | relative_url }}">Projects</a>
+            
+            <a class="py-4 px-3 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-blue-400 transition-colors duration-300 {% if page.url == '/about/' %}text-primary dark:text-blue-400{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
+            
+            <button id="darkModeToggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">
+              <i class="fas fa-moon dark:hidden"></i>
+              <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+            </button>
+          </div>
+          
+          <div class="md:hidden flex items-center">
+            <button id="darkModeToggleMobile" class="mr-2 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300">
+              <i class="fas fa-moon dark:hidden"></i>
+              <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+            </button>
+            <button class="mobile-menu-button p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none transition-colors duration-300">
+              <i class="fas fa-bars text-gray-700 dark:text-gray-200"></i>
+            </button>
+          </div>
+      </div>
+  </div>
+  
+  <div class="mobile-menu hidden md:hidden">
+      <a class="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-200 {% if page.url == '/' %}is-active{% endif %}" href="{{ '/' | prepend: site.baseurl }}">Home</a>
+      <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-200 {% if page.url == '/projects/' %}is-active{% endif %}" href="{{ '/projects/' | prepend: site.baseurl }}">Projects</a>
+      <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-200 {% if page.url == '/about/' %}is-active{% endif %}" href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+  </div>
+</nav>

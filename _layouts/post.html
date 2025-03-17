@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<h1 class="title animate__animated animate__fadeIn" style="color: var(--primary-color); font-size: 2.0rem;">{{ page.title }} 
+</h1>
+<p>{{ page.date | date: "%Y-%m-%d" }}</p>
+<div class="year-divider" id=""></div>
+<div class="content">
+{{ content }}
+</div>
+<br>
+<br>
+{% if page.comments %} 
+
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+    this.page.url = "{{ page.url | absolute_url }}";  
+    this.page.identifier = "{{ page.id }}"; 
+};
+
+(function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://{{ site.disqus }}.com/embed.js'; 
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+
+{% endif %}

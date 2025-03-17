@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<!-- Blog Content -->
+    <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">Welcome to My Blog</h1>
+        <p class="text-gray-600 dark:text-gray-300 mx-auto max-w-2xl">{{ site.description }}</p>
+    </div>
+    
+    {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+    {% for year in posts_by_year %}
+        {% for post in year.items %}
+            <!-- Post Card -->
+            <div class="relative bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden mb-6">
+                <!-- Post Content -->
+                <div class="p-6">
+                    <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
+                        <i class="far fa-calendar mr-2"></i>
+                        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-3 hover:text-primary transition-colors">
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </h3>
+
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        {{ post.excerpt | strip_html | truncatewords: 30 }}
+                    </p>
+
+                    <!-- Read More Button -->
+                    <a href="{{ post.url | relative_url }}" class="inline-block px-4 py-2 bg-primary hover:bg-secondary text-white rounded-md shadow-sm transition-colors duration-300">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endfor %}
