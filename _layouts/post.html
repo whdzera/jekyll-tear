@@ -1,13 +1,22 @@
 ---
 layout: default
 ---
-<h1 class="title animate__animated animate__fadeIn" style="color: var(--primary-color); font-size: 2.0rem;">{{ page.title }} 
-</h1>
-<p>{{ page.date | date: "%Y-%m-%d" }}</p>
-<div class="year-divider" id=""></div>
-<div class="content">
-{{ content }}
-</div>
+<article class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-primary dark:text-blue-400 mb-4 animate-fade-in">
+      {{ page.title }}
+    </h1>
+    
+    <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-6">
+      <i class="far fa-calendar mr-2"></i>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+    </div>
+    
+    <div class="h-px w-full bg-gradient-to-r from-primary to-transparent dark:from-blue-400 mb-8"></div>
+    
+    <div class="prose dark:prose-invert prose-lg max-w-none text-gray-700 dark:text-gray-200">
+      {{ content }}
+    </div>
+  </article>
 <br>
 <br>
 {% if page.comments %} 
