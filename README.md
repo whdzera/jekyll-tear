@@ -5,7 +5,7 @@
 # About
 Theme blog for jekyll using Tailwind Css and Stimulus.js.
 
-# Preview
+## Preview
 my blog use this theme
 https://rokhimin.github.io
 
@@ -89,6 +89,22 @@ layout: about
 permalink: /projects/
 ---
 YOUR ABOUT
+```
+
+## Developer 
+Run Jekyll
+```
+rake run
+```
+
+Run Tailwindcss mode --watch
+```
+rake css
+```
+
+Run Unit test
+```
+rake test
 ```
 
 ## Contributing
