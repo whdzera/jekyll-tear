@@ -1,10 +1,21 @@
 ---
 layout: default
 ---
-<h1 class="title animate__animated animate__fadeIn" style="color: var(--primary-color); font-size: 2.0rem;">About
+
+<div
+  class="relative md:mr-25 md:ml-25 bg-white dark:bg-gray-800 rounded-l-lg rounded-r-lg shadow-lg overflow-hidden mb-6"
+>
+<h1 class="text-3xl ml-5 mt-2 md:text-4xl font-bold text-primary dark:text-blue-400 animate-fade-in">
+  About
 </h1>
-<div class="year-divider" id=""></div>
-<img src="{{ site.photo_profile }}" alt="photo_profile" style="width:150px;"/>
-<div class="content">
-{{ content }}
+<article class="max-w-4xl mx-auto px-4 sm:px-6 py-4">
+    <div class="h-px w-full bg-gradient-to-r from-black to-transparent dark:from-blue-400 mb-8"></div>
+    
+
+    <div class="prose dark:prose-invert prose-lg max-w-none text-gray-700 dark:text-gray-200">
+        
+    <img src="{{ site.photo_profile }}" alt="photo_profile" style="width:150px;" />
+      {{ content }}
+    </div>
+</article>
 </div>

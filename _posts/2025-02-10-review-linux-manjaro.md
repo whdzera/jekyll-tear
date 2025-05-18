@@ -4,6 +4,7 @@ title: 'Review Linux Manjaro'
 date: 2025-02-10
 categories: [Review, Linux]
 comments: true
+thumbnail: assets/img/contoh_thumbnail.png
 ---
 
 <!---![](https://s3.gifyu.com/images/b2eG3.png)-->

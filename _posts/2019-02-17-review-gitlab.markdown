@@ -4,6 +4,7 @@ title: 'Review Gitlab'
 date: 2025-02-17
 categories: [Review, Git]
 comments: true
+thumbnail: assets/img/contoh_thumbnail.png
 ---
 ![](https://i.imgur.com/IESSpIH.png)
 

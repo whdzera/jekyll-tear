@@ -3,6 +3,7 @@ layout: post
 title: 'minimama lakana'
 date: 2022-08-11
 categories: projects
+thumbnail: assets/img/contoh_thumbnail.png
 ---
 
 ### Lorem ipsum 

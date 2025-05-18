@@ -1,5 +1,5 @@
 task :info do
-  puts "Tear"
+  puts "Tear - blog theme for Jekyll"
 end
 
 task :app do

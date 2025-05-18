@@ -4,6 +4,7 @@ title: 'ullamcorper quam risus quis platea'
 date: 2019-08-04
 categories: tutorials
 comments: true
+thumbnail: assets/img/contoh_thumbnail.png
 ---
 ### Lorem ipsum 
 odor amet, consectetuer adipiscing elit. Mus dis hendrerit aptent pharetra condimentum purus potenti. Ornare sed fames sapien, aliquam hendrerit nibh cursus porta. Malesuada suspendisse elit; nec et commodo et. Facilisi tortor duis penatibus pharetra, finibus arcu nostra malesuada. Volutpat primis fames primis convallis imperdiet vivamus. Nulla quam rhoncus morbi ultrices torquent consequat faucibus egestas aptent. Nascetur eleifend neque dapibus magnis congue arcu.

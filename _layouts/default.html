@@ -1,7 +1,28 @@
 <!DOCTYPE html>
 <html  lang="en">
   {% include head.html %}
-  <body class="bg-gray-100 dark:bg-gray-900 dark:text-white transition-colors duration-300" data-controller="theme">
+  <body
+  class="bg-gray-100 dark:bg-gray-900 dark:text-white transition-colors duration-300 max-h-100 overflow-y-auto
+
+  /* Scrollbar Track */
+  [&::-webkit-scrollbar]:w-4.5
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-gray-100
+  dark:[&::-webkit-scrollbar-track]:bg-gray-900
+
+  /* Scrollbar Thumb */
+  [&::-webkit-scrollbar-thumb]:absolute
+  
+  [&::-webkit-scrollbar-thumb]:bg-gray-400
+  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-700
+
+  /* Scrollbar Thumb on Hover */
+  [&::-webkit-scrollbar-thumb:hover]:bg-gray-500
+  dark:[&::-webkit-scrollbar-thumb:hover]:bg-neutral-400
+  "
+  data-controller="theme"
+>
+
     {% include navigation.html %}  
   <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     {{ content }}

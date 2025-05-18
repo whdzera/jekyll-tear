@@ -4,6 +4,7 @@ title: 'RSSFeed to discord with Huginn'
 date: 2019-06-09
 categories: [Tutorial]
 comments: true
+thumbnail: assets/img/contoh_thumbnail.png
 ---
 
 # rssfeed to discord with Huginn
