@@ -10,7 +10,7 @@ logo: Tear
 footer: "Created with ❤ by whdzera"
 twitter_username: jekyllrb
 github_username:  jekyll
-disqus: "rokhimin-1.disqus"
+disqus: ""
 
 plugins:
   - jekyll-feed
