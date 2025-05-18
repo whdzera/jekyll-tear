@@ -1,5 +1,5 @@
 task :info do
-  puts "Hello, Rake!"
+  puts "Tear"
 end
 
 task :app do
