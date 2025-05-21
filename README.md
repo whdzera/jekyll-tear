@@ -3,7 +3,7 @@
 [![Gem](https://img.shields.io/gem/dt/tear-jekyll-theme.svg)](https://rubygems.org/gems/tear-jekyll-theme)
 
 # About
-Theme blog for jekyll using Tailwind Css and Stimulus.js.
+Theme blog for jekyll using Tailwindcss and Stimulus.js.
 
 ## Preview
 my blog use this theme
@@ -57,16 +57,27 @@ Run jekyll:
 
 ```yaml
 title: Tear
-email: youremail@gmail.com
-description: yourdesc
+email: whdzera@gmail.com
+description: >- 
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: "" 
-url: "" 
-footer: Example Theme Tear [/code] by whdzera
-twitter_username: whdzera
-github_username:  rokhimin
-logo:whdzera
-theme: niri
+url: ""
+logo: Tear
+footer: "Created with ❤ by whdzera"
+twitter_username: tear
+github_username:  tear
+linkedin_username:  tear
+youtube_username:  tear
 disqus: ""
+
+plugins:
+  - jekyll-feed
+
+markdown: kramdown
+kramdown:
+  input: GFM"
 ```
 
 ##### Create file 'projects.markdown' in '/' to use page Projects feature

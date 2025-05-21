@@ -12,20 +12,41 @@
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center space-x-1">
         <a
-          class="py-4 px-3 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors duration-300"
-          href="{{ '/' | relative_url }}"
-          >Home</a
-        >
-        <a
-          class="py-4 px-3 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors duration-300"
-          href="{{ '/projects/' | relative_url }}"
-          >Projects</a
-        >
-        <a
-          class="py-4 px-3 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors duration-300"
-          href="{{ '/about/' | relative_url }}"
-          >About</a
-        >
+  href="{{ '/' | relative_url }}"
+  class="block rounded px-4 py-2 transition-colors duration-300 
+    {% if page.url == '/' %}
+      text-gray-900 dark:text-blue-400 font-semibold bg-gray-300 dark:bg-gray-700
+    {% else %}
+      text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700
+    {% endif %}"
+>
+  Home
+</a>
+
+<a
+  href="{{ '/projects/' | relative_url }}"
+  class="block rounded px-4 py-2 transition-colors duration-300 
+    {% if page.url == '/projects/' %}
+      text-gray-900 dark:text-blue-400 font-semibold bg-gray-300 dark:bg-gray-700
+    {% else %}
+      text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700
+    {% endif %}"
+>
+  Projects
+</a>
+
+<a
+  href="{{ '/about/' | relative_url }}"
+  class="block rounded px-4 py-2 transition-colors duration-300 
+    {% if page.url == '/about/' %}
+      text-gray-900 dark:text-blue-400 font-semibold bg-gray-300 dark:bg-gray-700
+    {% else %}
+      text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700
+    {% endif %}"
+>
+  About
+</a>
+
 
         <!-- Dark Mode Toggle Desktop -->
         <button

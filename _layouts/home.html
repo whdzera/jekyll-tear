@@ -12,40 +12,43 @@ layout: default
   </p>
 </div>
 
+<!-- Post Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:mx-24 mb-6">
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date:
 '%Y'" %} {% for year in posts_by_year %} {% for post in year.items %}
-<!-- Post Card -->
-<div
-  class="relative md:mr-25 md:ml-25 bg-white dark:bg-gray-800 rounded-l-lg rounded-r-lg shadow-lg overflow-hidden mb-6"
->
-  <!-- Thumbnail -->
-  {% if post.thumbnail %}
-  <a href="{{ post.url | relative_url }}" data-controller="thumbnail">
-    <img
-      src="{{ post.thumbnail }}"
-      alt="Thumbnail {{ post.title }}"
-      data-thumbnail-target="image"
-      class="w-full h-48 object-cover transition duration-300 ease-in-out rounded-lg"
-    />
-  </a>
 
-  {% endif %}
+  <!-- Post Card -->
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+    
+    <!-- Thumbnail -->
+    {% if post.thumbnail %}
+    <a href="{{ post.url | relative_url }}" data-controller="thumbnail">
+      <div class="w-full h-48 overflow-hidden rounded-t-lg">
+        <img
+          src="{{ post.thumbnail }}"
+          alt="Thumbnail {{ post.title }}"
+          data-thumbnail-target="image"
+          class="w-full h-full object-cover transform transition-transform duration-300 ease-in-out"
+        />
+      </div>
+    </a>
 
-  <!-- Post Content -->
-  <div class="p-3">
-    <div
-      class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-1"
-    >
-      <i class="far fa-calendar"></i>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+    {% endif %}
+
+    <!-- Post Content -->
+    <div class="p-4">
+      <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2 space-x-2">
+        <i class="far fa-calendar"></i>
+        <span>{{ post.date | date: "%b %-d, %Y" }} - {{ post.author }}</span>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 dark:text-white hover:text-primary transition-colors">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h3>
     </div>
-
-    <h3
-      class="text-2xl font-bold text-gray-800 dark:text-white hover:text-primary transition-colors"
-    >
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h3>
   </div>
-</div>
+
 
 {% endfor %} {% endfor %}
+
+</div>
