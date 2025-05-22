@@ -1,157 +1,84 @@
 <footer class="bg-white dark:bg-gray-800 shadow-inner mt-12">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-    <!-- General -->
-    <div class="mt-4 ml-4"></div>
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-4 py-8">
 
-    <!-- Navigation -->
-    <div class="mt-4 ml-4 text-center">
-      <p>
-        <a
-          href="{{ '/feed' | prepend: site.baseurl }}"
-          class="hover:text-blue-400 transition"
-          >RSS Feed</a
-        >
-        |
-        <a
-          href="{{ '/gb' | prepend: site.baseurl }}"
-          class="hover:text-blue-400 transition"
-          >Guest Book</a
-        >
+    <!-- Spacer / Branding area -->
+    <div></div>
+
+    <!-- Navigation & Social Links -->
+    <div class="text-center">
+      <!-- Navigation Links -->
+      <p class="mb-2 text-gray-700 dark:text-gray-300">
+        <a href="{{ '/feed' | prepend: site.baseurl }}" class="hover:text-blue-400 transition">RSS Feed</a>
+        <span class="mx-2">|</span>
+        <a href="{{ '/gb' | prepend: site.baseurl }}" class="hover:text-blue-400 transition">Guest Book</a>
       </p>
 
-      <div class="flex space-x-3 mb-1 mt-2 text-xl items-center justify-center">
-        <a
-          href="mailto:{{ site.email }}"
-          class="hover:text-blue-400 transition"
-          aria-label="Email"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-            />
+      <!-- Social Icons -->
+      <div class="flex justify-center items-center space-x-4 text-gray-600 dark:text-gray-300 text-xl">
+        <!-- Email -->
+        <a href="mailto:{{ site.email }}" class="hover:text-blue-400 transition" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 1.5 6.75m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
           </svg>
         </a>
-        <a
-          href="https://github.com/{{ site.github_username }}"
-          class="hover:text-blue-400 transition"
-          aria-label="GitHub"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 2.25A9.75 9.75 0 0 0 2.25 12c0 4.29 2.77 7.93 6.6 9.22.48.09.65-.21.65-.47v-1.69c-2.68.58-3.25-1.3-3.25-1.3-.44-1.12-1.07-1.42-1.07-1.42-.88-.6.07-.59.07-.59.98.07 1.5.95 1.5.95.87 1.49 2.28 1.06 2.84.81.09-.64.34-1.06.62-1.3-2.16-.24-4.43-1.08-4.43-4.82 0-1.06.38-1.93 1-2.61-.1-.24-.44-1.14.1-2.38 0 0 .75-.24 2.46.92a8.44 8.44 0 0 1 4.5 0c1.71-1.16 2.46-.92 2.46-.92.54 1.24.2 2.14.1 2.38.62.68 1 1.55 1 2.61 0 3.75-2.28 4.58-4.45 4.82.35.3.66.89.66 1.8v2.67c0 .26.17.56.66.47A9.75 9.75 0 0 0 21.75 12 9.75 9.75 0 0 0 12 2.25Z"
-            />
+
+        <!-- GitHub -->
+        <a href="https://github.com/{{ site.github_username }}" class="hover:text-blue-400 transition" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 2.25A9.75 9.75 0 0 0 2.25 12c0 4.29 2.77 7.93 6.6 9.22.48.09.65-.21.65-.47v-1.69c-2.68.58-3.25-1.3-3.25-1.3-.44-1.12-1.07-1.42-1.07-1.42-.88-.6.07-.59.07-.59.98.07 1.5.95 1.5.95.87 1.49 2.28 1.06 2.84.81.09-.64.34-1.06.62-1.3-2.16-.24-4.43-1.08-4.43-4.82 0-1.06.38-1.93 1-2.61-.1-.24-.44-1.14.1-2.38 0 0 .75-.24 2.46.92a8.44 8.44 0 0 1 4.5 0c1.71-1.16 2.46-.92 2.46-.92.54 1.24.2 2.14.1 2.38.62.68 1 1.55 1 2.61 0 3.75-2.28 4.58-4.45 4.82.35.3.66.89.66 1.8v2.67c0 .26.17.56.66.47A9.75 9.75 0 0 0 21.75 12 9.75 9.75 0 0 0 12 2.25Z" />
           </svg>
         </a>
-        <a
-          href="https://x.com/{{ site.twitter_username }}"
-          class="hover:text-blue-400 transition"
-          aria-label="X"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            class="w-5 h-5"
-          >
+
+        <!-- X / Twitter -->
+        <a href="https://x.com/{{ site.twitter_username }}" class="hover:text-blue-400 transition" aria-label="X">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path
-              d="M14.24 10.32 22.03 0h-2.01l-6.73 8.39L7.81 0H0l8.19 11.64L0 24h2.01l7.07-8.81L16.19 24H24l-9.76-13.68Zm-2.51 3.13-.82-1.18L3.27 1.53h3.33l6.2 8.94.82 1.18 7.99 11.54h-3.33l-6.2-8.94Z"
-            />
+              d="M14.24 10.32 22.03 0h-2.01l-6.73 8.39L7.81 0H0l8.19 11.64L0 24h2.01l7.07-8.81L16.19 24H24l-9.76-13.68Zm-2.51 3.13-.82-1.18L3.27 1.53h3.33l6.2 8.94.82 1.18 7.99 11.54h-3.33l-6.2-8.94Z" />
           </svg>
         </a>
-        <a
-          href="https://linkedin.com/{{ site.linkedin_username }}"
-          class="hover:text-blue-400 transition"
-          aria-label="LinkedIn"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            class="w-5 h-5"
-            viewBox="0 0 24 24"
-          >
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/{{ site.linkedin_username }}" class="hover:text-blue-400 transition" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path
-              d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.48 8h4V24h-4V8zm7.5 0h3.83v2.16h.05c.53-1 1.82-2.16 3.75-2.16 4 0 4.74 2.62 4.74 6.03V24h-4v-8.38c0-2-.03-4.59-2.8-4.59-2.8 0-3.23 2.19-3.23 4.44V24h-4V8z"
-            />
+              d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.48 8h4V24h-4V8zm7.5 0h3.83v2.16h.05c.53-1 1.82-2.16 3.75-2.16 4 0 4.74 2.62 4.74 6.03V24h-4v-8.38c0-2-.03-4.59-2.8-4.59-2.8 0-3.23 2.19-3.23 4.44V24h-4V8z" />
           </svg>
         </a>
-        <a
-          href="https://youtube.com/{{ site.youtube_username }}"
-          class="hover:text-blue-400 transition"
-          aria-label="YouTube"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            class="w-5 h-5"
-            viewBox="0 0 24 24"
-          >
+
+        <!-- YouTube -->
+        <a href="https://youtube.com/{{ site.youtube_username }}" class="hover:text-blue-400 transition" aria-label="YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path
-              d="M23.5 6.5s-.2-1.6-.8-2.3c-.7-.9-1.5-1-1.9-1.1C17.7 3 12 3 12 3s-5.7 0-8.8.1c-.4 0-1.2.2-1.9 1.1C.7 4.9.5 6.5.5 6.5S0 8.4 0 10.3v1.4c0 1.9.5 3.8.5 3.8s.2 1.6.8 2.3c.7.9 1.7.9 2.2 1 1.6.2 6.5.2 6.5.2s5.7 0 8.8-.1c.4 0 1.2-.2 1.9-1.1.6-.7.8-2.3.8-2.3s.5-1.9.5-3.8v-1.4c0-1.9-.5-3.8-.5-3.8zM9.5 15.5v-7l6 3.5-6 3.5z"
-            />
+              d="M23.5 6.5s-.2-1.6-.8-2.3c-.7-.9-1.5-1-1.9-1.1C17.7 3 12 3 12 3s-5.7 0-8.8.1c-.4 0-1.2.2-1.9 1.1C.7 4.9.5 6.5.5 6.5S0 8.4 0 10.3v1.4c0 1.9.5 3.8.5 3.8s.2 1.6.8 2.3c.7.9 1.7.9 2.2 1 1.6.2 6.5.2 6.5.2s5.7 0 8.8-.1c.4 0 1.2-.2 1.9-1.1.6-.7.8-2.3.8-2.3s.5-1.9.5-3.8v-1.4c0-1.9-.5-3.8-.5-3.8zM9.5 15.5v-7l6 3.5-6 3.5z" />
           </svg>
         </a>
       </div>
     </div>
 
-    <div class="flex flex-col justify-between items-start md:items-end">
-      <!-- Back to top -->
-      <a
-        href="#top"
-        class="mt-3 mr-4 ml-4 inline-flex items-center justify-center w-10 h-10 border border-gray-900 rounded-full hover:bg-gray-400 hover:text-gray-900 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
-        aria-label="Up"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18"
-          />
+    <!-- Back to top -->
+    <div class="flex justify-end items-start">
+      <a href="#top" class="mt-1 w-10 h-10 flex items-center justify-center border border-gray-300 dark:border-gray-700 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 hover:text-black dark:hover:text-white transition" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
         </svg>
       </a>
     </div>
   </div>
 
-  <!-- Optional bottom border -->
-  <div class="mt-3 border-t border-gray-700"></div>
-
-  <div class="max-w-6xl mx-auto px-4 py-8">
-    <div class="text-center text-gray-500 dark:text-gray-400">
-      <p>{{ site.footer }}</p>
-      <p>
-        Powered by
-        <a href="https://jekyllrb.com/" class="text-blue-400">Jekyll</a>
-      </p>
-      <p>
-        &copy;{{ site.time | date: '%Y' }}
-        <a href="https://github.com/rokhimin/jekyll-tear" class="text-blue-400"
-          >Tear Theme</a
-        >.
-      </p>
-    </div>
+  <!-- Divider -->
+  <div class="border-t border-gray-100 dark:border-gray-700"></div>
+  
+  <!-- Footer Note -->
+  <div class="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+    <p>{{ site.footer }}</p>
+    <p>
+      Powered by <a href="https://jekyllrb.com/" class="text-blue-400 hover:underline">Jekyll</a>
+    </p>
+    <p>
+      &copy;{{ site.time | date: '%Y' }}
+      <a href="https://github.com/rokhimin/jekyll-tear" class="text-blue-400 hover:underline">Tear Theme</a>.
+    </p>
   </div>
 </footer>

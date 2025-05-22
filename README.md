@@ -77,7 +77,7 @@ plugins:
 
 markdown: kramdown
 kramdown:
-  input: GFM"
+  input: GFM
 ```
 
 ##### Create file 'projects.markdown' in '/' to use page Projects feature

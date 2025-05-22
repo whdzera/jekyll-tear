@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "tear-jekyll-theme"
-  spec.version       = "1.0.3"
+  spec.version       = "1.0.4"
   spec.authors       = ["Rokhimin"]
   spec.email         = ["Rokhim.whd@gmail.com"]
 
