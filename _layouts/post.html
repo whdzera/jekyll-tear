@@ -41,8 +41,8 @@ layout: default
 </div>
 <script>
 var disqus_config = function () {
-    this.page.url = "{{ page.url | absolute_url }}";  
-    this.page.identifier = "{{ page.id }}"; 
+    this.page.url = "https://whdzera.my.id/{{ page.path | split: '/' | last | remove: '.md' | slice: 11, 100 }}.rb";
+    this.page.identifier = "{{ page.url }}"; 
 };
 
 (function() { 

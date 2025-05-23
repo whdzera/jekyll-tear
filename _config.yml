@@ -12,7 +12,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 linkedin_username:  jekyll
 youtube_username:  jekyll
-disqus: "rokhimin-1.disqus"
+disqus: ""
 
 plugins:
   - jekyll-feed
