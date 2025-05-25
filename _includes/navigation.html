@@ -36,6 +36,18 @@
 </a>
 
 <a
+  href="{{ '/tools/' | relative_url }}"
+  class="block rounded px-4 py-2 transition-colors duration-300 
+    {% if page.url == '/tools/' %}
+      text-gray-900 dark:text-blue-400 font-semibold bg-gray-300 dark:bg-gray-700
+    {% else %}
+      text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700
+    {% endif %}"
+>
+  Tools
+</a>
+
+<a
   href="{{ '/about/' | relative_url }}"
   class="block rounded px-4 py-2 transition-colors duration-300 
     {% if page.url == '/about/' %}
@@ -95,15 +107,16 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu hidden md:hidden" data-navbar-target="menu">
-    <a
-      class="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-200"
-      href="{{ '/' | prepend: site.baseurl }}"
-      >Home</a
-    >
+
     <a
       class="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-200"
       href="{{ '/projects/' | prepend: site.baseurl }}"
       >Projects</a
+    >
+    <a
+      class="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-200"
+      href="{{ '/tools/' | prepend: site.baseurl }}"
+      >Tools</a
     >
     <a
       class="block py-2 px-4 text-sm hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-200"
