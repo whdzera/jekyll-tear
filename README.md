@@ -7,7 +7,7 @@ Theme blog for jekyll using Tailwindcss and Stimulus.js.
 
 ## Preview
 my blog use this theme
-https://rokhimin.github.io
+https://whdzera.github.io
 
 ## Features
 - Stylish UI
@@ -120,7 +120,7 @@ rake test
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/rokhimin/jekyll-tear. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/whdzera/jekyll-tear. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ## Development
 
